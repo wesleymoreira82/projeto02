@@ -34,7 +34,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -48,17 +49,17 @@ body * {
 #profile img {
   width: 112px;
   border-radius: 50%;
-  transition: all 1.5s;
-  cursor: pointer;
+  /*transition: all 1.5s;
+  cursor: pointer;*/
 }
 
-#profile img:hover {
+/*#profile img:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   -xpedu-transform: rotatez(360deg);
   -ms-transform: rotateZ(360deg);
   transform: rotateZ(360deg);
-}
+}*/
 
 #profile p {
   font-weight: 500;
@@ -142,17 +143,17 @@ ul li a {
   text-decoration: none;
   font-weight: 500;
 
-  transition: background 0.5s;
+  /*transition: background 0.5s;
   transition: all 0.5s;
-  cursor: pointer;
+  cursor: pointer;*/
 }
 
 /*psudo selector*/
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+ /* -webkit-transform: scale(1.1);
+  transform: scale(1.1);*/
 }
 
 /*Social Links */
