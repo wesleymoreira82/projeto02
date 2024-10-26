@@ -16,7 +16,7 @@
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: url(./assets/bg-mobile-light.png);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -49,17 +50,19 @@ body * {
 #profile img {
   width: 112px;
   border-radius: 50%;
-  /*transition: all 1.5s;
-  cursor: pointer;*/
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-/*#profile img:hover {
+#profile img:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  -xpedu-transform: rotatez(360deg);
-  -ms-transform: rotateZ(360deg);
-  transform: rotateZ(360deg);
-}*/
+  -xpedu-transform: rotatez(-5deg);
+  -ms-transform: rotateZ(-5deg);
+  transform: rotateZ(-5deg);
+}
 
 #profile p {
   font-weight: 500;
@@ -143,17 +146,17 @@ ul li a {
   text-decoration: none;
   font-weight: 500;
 
-  /*transition: background 0.5s;
+  transition: background 0.5s;
   transition: all 0.5s;
-  cursor: pointer;*/
+  cursor: pointer;
 }
 
 /*psudo selector*/
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
- /* -webkit-transform: scale(1.1);
-  transform: scale(1.1);*/
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /*Social Links */
